@@ -8,7 +8,19 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>JH-Tooling</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
     <style>
+
+        p {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h4 {
+            font-family: 'Inter', sans-serif;
+        }
+
         .image-container {
             position: relative;
         }
@@ -36,6 +48,13 @@
             background-attachment: fixed;
         }
     </style>
+
+    <script>
+        function show(enable) {
+            document.getElementById("item-carousel-show").hidden = !enable;
+            document.getElementById("appliance").hidden = enable;
+        }
+    </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -45,7 +64,7 @@
         <a class="navbar-brand">
             <img src="/JHM/static/home/logo.png" alt="Logo" width="30" height="24"
                  class="d-inline-block align-text-top">
-            <strong class="text-success"><em>JH-Tooling</em></strong>
+            <strong style="color: #3E5C3D;"><em>JH-Tooling</em></strong>
         </a>
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -69,10 +88,10 @@
 
 <div id="home" class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
     <div class="card">
-        <img class="card-img" src="/JHM/static/home/samples.png">
+        <img class="card-img" src="/JHM/static/ico/bg.jpg">
         <div class="card-img-overlay" style="padding: 50px;">
-            <h1 class="card-title text-success position-absolute top-50" style="padding-bottom: 100px;">
-                <strong>JH-Tooling</strong>
+            <h1 class="card-title position-absolute top-50" style="padding-bottom: 100px;">
+                <strong style="color: #3E5C3D;">JH-Tooling</strong>
             </h1>
             <div class="half-mask position-absolute bottom-0" style="
         background: linear-gradient(
@@ -80,7 +99,8 @@
           hsla(115, 57%, 57%, 0.7),
           rgba(255, 255, 255, 0) 100%
         );">
-                <h4 class="card-text text-success position-absolute bottom-0" style="padding: 50px ;">JH Tooling Co.
+                <h4 class="card-text position-absolute bottom-0" style="color: #3E5C3D; padding: 50px ;">JH
+                    Tooling Co.
                     Ltd(JH) is located in Shenzhen City, China which is close to
                     Hong Kong extremely. JH was founded in 2008 and has 70 staff with square meters of 4000 land
                     nowadays.
@@ -92,7 +112,7 @@
     <div id="principle" style="padding:50px; color: #3E5C3D;">
         <h1 class="text-center">Our Principle</h1>
         <ul class="list-group list-group-horizontal justify-content-center" style="padding: 30px;">
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0" style="padding-right: 100px;">
                 <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                             d="M26.2453 10.5669C26.8922 10.5669 27.5126 10.8239 27.97 11.2813C28.4275 11.7387 28.6844 12.3591 28.6844 13.006V17.8842C28.6844 18.5311 28.4275 19.1515 27.97 19.6089C27.5126 20.0664 26.8922 20.3233 26.2453 20.3233H24.9502C24.6528 22.6811 23.5053 24.8493 21.7229 26.4211C19.9405 27.9929 17.6458 28.8602 15.2693 28.8602V26.4211C17.21 26.4211 19.0712 25.6502 20.4435 24.2779C21.8157 22.9056 22.5867 21.0445 22.5867 19.1038V11.7865C22.5867 9.84578 21.8157 7.98459 20.4435 6.61233C19.0712 5.24007 17.21 4.46914 15.2693 4.46914C13.3287 4.46914 11.4675 5.24007 10.0952 6.61233C8.72295 7.98459 7.95202 9.84578 7.95202 11.7865V20.3233H4.29336C3.64646 20.3233 3.02607 20.0664 2.56865 19.6089C2.11122 19.1515 1.85425 18.5311 1.85425 17.8842V13.006C1.85425 12.3591 2.11122 11.7387 2.56865 11.2813C3.02607 10.8239 3.64646 10.5669 4.29336 10.5669H5.58852C5.88613 8.20938 7.03379 6.04147 8.81616 4.46996C10.5985 2.89845 12.8931 2.03134 15.2693 2.03134C17.6456 2.03134 19.9401 2.89845 21.7225 4.46996C23.5049 6.04147 24.6525 8.20938 24.9502 10.5669H26.2453ZM10.0984 20.0611L11.3912 17.9928C12.5535 18.7209 13.8978 19.106 15.2693 19.1038C16.6409 19.106 17.9852 18.7209 19.1475 17.9928L20.4402 20.0611C18.8905 21.0321 17.0981 21.5457 15.2693 21.5429C13.4406 21.5457 11.6482 21.0321 10.0984 20.0611Z"
@@ -100,7 +120,7 @@
                 </svg>
                 <strong>Efficient</strong>
             </li>
-            <li class="list-group-item border-0">
+            <li class="list-group-item border-0" style="padding-right: 100px;">
                 <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="14.6233" height="5.33399" rx="2.66699"
                           transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 34.1077 11.107)" fill="#DDD748"/>
@@ -159,10 +179,23 @@
                 <p>JH own DERWA,YCM,DAHLIH,FANUC brands CNC. Machine; TaiWanXiTe,Mirrordick,HSPK brands EDM Machine;
                     HF300,
                     HF400 HF700, HF500 brands Wire-cut;DaTong brand Milling Machine; DaTong,PuFa brands Grinding
-                    Machine; Gui
-                    Lin brand Lathe; HaiKeSiKang, Mitutoyo,HaiKeSiKang brands CMM; ShunXing brand Mold spotting machine;
-                    TaiYi
-                    brand Laser marking machine equipments.
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                Machine; Gui
+                Lin brand Lathe; HaiKeSiKang, Mitutoyo,HaiKeSiKang brands CMM; ShunXing brand Mold spotting machine;
+                TaiYi
+                brand Laser marking machine equipments.
                 </p>
                 <p>
                     JH has sister's mold shop, own YCM,Jia Tie, PRIMINER,FINECNC brands CNC Machine;
@@ -179,9 +212,10 @@
 <div id="business" class="container-fluid" style="padding: 50px;">
     <div class="container" style="background: #F6F8F7; color: #3F4F10;">
         <h1 class="text-center">Business</h1>
+
         <div class="row text-center" style="padding-left: 50px; padding-right: 50px;">
-            <div class="col-4 bg-white row align-items-center" style="margin: 10px">
-                <div>
+            <div class="col bg-white row align-items-center" style="margin: 10px;" onmouseenter="show(true);" onmouseleave="show(false);">
+                <div id="appliance">
                     <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.398682" y="7.36206" width="17.0738" height="17.0738" fill="#E6EBE0"/>
                         <path
@@ -193,11 +227,21 @@
                     </svg>
                     <p>Appliance</p>
                 </div>
+                <div id="item-carousel-show" class="carousel slide" data-bs-ride="carousel" hidden>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1">
+                            <img src="/JHM/static/ico/ico2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/ico/ico3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/ico/ico4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-5 bg-success" style="padding: 10px; margin: 10px">
-                <img src="/JHM/static/ico/ico2.jpg"/>
-            </div>
-            <div class="col-2 bg-white row align-items-center" style="margin: 10px">
+            <div class="col bg-white row align-items-center" style="margin: 10px">
                 <div>
                     <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.441284" y="7.36206" width="17.0738" height="17.0738" fill="#E6EBE0"/>
@@ -208,10 +252,7 @@
                     <p>Medical</p>
                 </div>
             </div>
-            <div class="col-3 bg-success row align-items-center" style="padding: 10px; margin: 10px">
-                <img src="/JHM/static/ico/ico3.jpg"/>
-            </div>
-            <div class="col-3 bg-white row align-items-center" style="margin: 10px">
+            <div class="col bg-white row align-items-center" style="margin: 10px">
                 <div>
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.797852" y="10.1484" width="17.0738" height="17.0738" fill="#E6EBE0"/>
@@ -221,9 +262,6 @@
                     </svg>
                     <p>Automotive</p>
                 </div>
-            </div>
-            <div class="col-5 bg-success" style="padding: 10px; margin: 10px">
-                <img src="/JHM/static/ico/ico4.jpg"/>
             </div>
         </div>
     </div>
@@ -246,7 +284,8 @@
     </div>
     <div class="col-4" style="padding-top: 200px; padding-bottom: 200px;">
         <h3 style="color: #29A94D;"><strong>15 Years Experience</strong></h3>
-        <svg style="position: absolute; right: 650px;" width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <svg style="position: absolute; right: 650px;" width="150" height="150" viewBox="0 0 93 93" fill="none"
+             xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="93" height="93" fill="url(#pattern0)"/>
             <defs>
@@ -283,6 +322,24 @@
 <div id="more" class="container-fluid" style="padding:100px 20px;">
     <h1>More Information</h1>
     <h3 style="color: #29A94D;">Process</h3>
+    <div class="row">
+        <div class="col-4">
+            <div id="list-example" class="list-group"
+                 style="--bs-list-group-active-bg: #3E5C3D; --bs-list-group-active-border-color:#3E5C3D;">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">DFM Report<br>MF Report<br>Weekly
+                    Progress Report<br>Parameter Sheet</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">DFM Report<br>MF Report<br>Weekly
+                    Progress Report<br>Parameter Sheet</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                 class="scrollspy-example" tabindex="0">
+                <img id="list-item-1" src="/JHM/static/ico/sheet1.jpg">
+                <img id="list-item-2" src="/JHM/static/ico/sheet1.jpg">
+            </div>
+        </div>
+    </div>
     <h3 style="color: #29A94D;">Certification</h3>
     <div class="text-center">
         <img src="/JHM/static/more/certification.png" alt="It's real" style="width: 50%; height: auto;">
@@ -300,8 +357,27 @@
                     referrerpolicy="no-referrer-when-downgrade" hidden></iframe>
             <p><strong style="color: #29A94D;">PHONE:</strong> 86+18359983809</p>
             <p><strong style="color: #29A94D;">WE CHAT:</strong> hqZ2855687601</p>
-            <img src="/JHM/static/home/logo.png" style="width: 10%;"><strong style="color: #29A94D;"><em>
-            JH-TOOLING</em></strong>
+            <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21.1741" cy="16" r="14.5" stroke="#F1E928" stroke-width="3"/>
+                <rect x="31.0522" y="11.8235" width="2.86211" height="2.17891" fill="#A2CBE4"/>
+                <path d="M31.0522 19.6677H33.9144V21.6287H31.0522V19.6677Z" fill="#A2CBE4"/>
+                <rect x="12.687" y="13.9656" width="3.81615" height="5.66515" fill="#A2CBE4"/>
+                <rect x="14.3564" y="8.51831" width="5.48571" height="16.1239" fill="#21A400"/>
+                <rect x="12.21" y="8.51831" width="0.954037" height="16.1239" fill="#21A400"/>
+                <rect x="33.199" y="8.51831" width="1.19255" height="16.1239" fill="#21A400"/>
+                <rect x="26.759" y="8.51831" width="5.48571" height="16.1239" fill="#21A400"/>
+                <rect x="19.8423" y="13.9656" width="6.91677" height="5.66515" fill="#F1E928"/>
+                <rect x="19.8423" y="11.7866" width="6.91677" height="1.08945" fill="#F1E928"/>
+                <rect x="19.8423" y="20.7202" width="6.91677" height="0.871562" fill="#F1E928"/>
+                <path d="M7.43525 5.28687H9.36583V27.0389H7.43525V5.28687Z" fill="#21A400"/>
+                <path d="M8.7223 27.0389L1.85171 20.2392C1.53599 19.9268 1 20.1504 1 20.5946V27.0389H8.7223Z"
+                      fill="#21A400"/>
+                <path d="M7.43525 5.28687H9.36583V27.0389H7.43525V5.28687Z" stroke="#21A400"/>
+                <path d="M8.7223 27.0389L1.85171 20.2392C1.53599 19.9268 1 20.1504 1 20.5946V27.0389H8.7223Z"
+                      stroke="#21A400"/>
+            </svg>
+            <strong style="color: #29A94D;"><em>
+                JH-TOOLING</em></strong>
         </div>
         <div class="col-6">
             <p><strong style="color: #29A94D;">EMAIL:</strong> angela@jhplastictooling.com</p>
