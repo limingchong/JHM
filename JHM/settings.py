@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-0-b2cej-_v%xmziz0b^t6yhw1azyjy2mg84a12uq(%lh-#1(5n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jhplastictool.com', '43.129.17.232']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jhplastictool.com','www.jhplastictool.com', '43.129.17.232']
 
 # Application definition
 
