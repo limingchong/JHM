@@ -50,9 +50,9 @@
     </style>
 
     <script>
-        function show(enable) {
-            document.getElementById("item-carousel-show").hidden = !enable;
-            document.getElementById("appliance").hidden = enable;
+        function show(enable, id) {
+            document.getElementById("item-carousel-show"+id).hidden = !enable;
+            document.getElementById("carousel"+id).hidden = enable;
         }
     </script>
 </head>
@@ -197,9 +197,9 @@
 <div id="business" class="container-fluid" style="padding: 50px;">
     <div class="container" style="padding: 30px; background: #F6F8F7; color: #3F4F10;">
         <h1 class="text-center" style="padding: 20px">Business</h1>
-        <div class="row text-center" style="padding-left: 50px; padding-right: 50px; height: 250px;">
-            <div class="col shadow bg-white row align-items-center" style="margin: 10px;" onmouseenter="show(true);" onmouseleave="show(false);">
-                <div id="appliance">
+        <div class="row text-center" style="padding-left: 50px; padding-right: 50px; height: 400px;">
+            <div class="col shadow bg-white row align-items-center" style="margin: 10px;" onmouseenter="show(true,1);" onmouseleave="show(false,1);">
+                <div id="carousel1">
                     <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.398682" y="7.36206" width="17.0738" height="17.0738" fill="#E6EBE0"/>
                         <path
@@ -211,16 +211,31 @@
                     </svg>
                     <p>Appliance</p>
                 </div>
-                <div id="item-carousel-show" class="carousel slide" data-bs-ride="carousel" hidden>
+                <div id="item-carousel-show1" class="carousel slide" data-bs-ride="carousel" hidden>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="1">
-                            <img src="/JHM/static/ico/ico2.jpg" class="d-block w-100" alt="...">
+                            <img src="/JHM/static/appliances/1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="1">
-                            <img src="/JHM/static/ico/ico3.jpg" class="d-block w-100" alt="...">
+                            <img src="/JHM/static/appliances/2.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="1">
-                            <img src="/JHM/static/ico/ico4.jpg" class="d-block w-100" alt="...">
+                            <img src="/JHM/static/appliances/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/appliances/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/appliances/5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/appliances/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/appliances/7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/appliances/8.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                 </div>
@@ -236,8 +251,8 @@
                     <p>Medical</p>
                 </div>
             </div>
-            <div class="col shadow bg-white row align-items-center" style="margin: 10px">
-                <div>
+            <div class="col shadow bg-white row align-items-center" style="margin: 10px" onmouseenter="show(true,3);" onmouseleave="show(false,3);">
+                <div id="carousel3">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.797852" y="10.1484" width="17.0738" height="17.0738" fill="#E6EBE0"/>
                         <path
@@ -245,6 +260,34 @@
                                 fill="#3E5C3D"/>
                     </svg>
                     <p>Automotive</p>
+                </div>
+                <div id="item-carousel-show3" class="carousel slide" data-bs-ride="carousel" hidden>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1">
+                            <img src="/JHM/static/automatives/8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -325,15 +368,15 @@
                  style="--bs-list-group-active-bg: #3E5C3D; --bs-list-group-active-border-color:#3E5C3D;">
                 <a class="list-group-item list-group-item-action" href="#list-item-1">DFM Report<br>MF Report<br>Weekly
                     Progress Report<br>Parameter Sheet</a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">DFM Report<br>MF Report<br>Weekly
-                    Progress Report<br>Parameter Sheet</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Trial Report<br>Trial Video<br>Dimension Report
+                    <br>Pre-Shipment Tool Check</a>
             </div>
         </div>
         <div class="col-10">
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
                  class="scrollspy-example" tabindex="0">
-                <img id="list-item-1" src="/JHM/static/ico/sheet1.jpg">
-                <img id="list-item-2" src="/JHM/static/ico/sheet1.jpg">
+                <img id="list-item-1" src="/JHM/static/more/1.jpg">
+                <img id="list-item-2" src="/JHM/static/more/2.jpg">
             </div>
         </div>
     </div>
